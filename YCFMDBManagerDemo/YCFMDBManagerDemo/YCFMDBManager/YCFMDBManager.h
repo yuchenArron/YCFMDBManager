@@ -15,6 +15,7 @@
 + (instancetype)shareInstance;
 
 //创建数据库 表
+- (void)create:(NSString*)sqlName model:(id)model;
 
 //增
 

@@ -9,6 +9,7 @@
 
 #import "YCFMDBManager.h"
 #import <FMDB.h>
+#import "YCFMDBCommand.h"
 
 static YCFMDBManager *manager = nil;
 
@@ -29,7 +30,28 @@ static YCFMDBManager *manager = nil;
     return manager;
 }
 
+- (void)create:(NSString *)sqlName model:(id)model{
+    
+    NSString *filePath = [self pathWith:sqlName];
+    self.db = [FMDatabase databaseWithPath:filePath];
+    self.dbQueue = [FMDatabaseQueue databaseQueueWithPath:filePath];
+    
+    [self.db open];
+    
+    NSString *createTableCmd = [YCFMDBCommand createTable:model];
+    [self.db executeUpdate:createTableCmd];
+    
+    [self.db close];
+    
+}
 
+#pragma mark - private methods
+
+//获取路径
+- (NSString*)pathWith:(NSString*)file{
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    return [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite",file]];
+}
 
 
 @end

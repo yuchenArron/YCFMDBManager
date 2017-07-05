@@ -15,6 +15,8 @@
 		042B9FAA1F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FA91F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.m */; };
 		042B9FBB1F0D223D00ED4C39 /* YCFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FBA1F0D223D00ED4C39 /* YCFMDBManager.m */; };
 		042B9FBF1F0D292C00ED4C39 /* YCFMDBCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FBE1F0D292C00ED4C39 /* YCFMDBCommand.m */; };
+		042B9FC21F0D36AE00ED4C39 /* AppDelegate+Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FC11F0D36AE00ED4C39 /* AppDelegate+Auxiliary.m */; };
+		042B9FC61F0D377F00ED4C39 /* YCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FC51F0D377F00ED4C39 /* YCUserInfo.m */; };
 		204A550BE1B47A41A06442AF /* libPods-YCFMDBManagerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64219D850084DFF32C696857 /* libPods-YCFMDBManagerDemoUITests.a */; };
 		3F544B1308860E6B995E89D3 /* libPods-YCFMDBManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6D69160BDE73CA1EA2F55C /* libPods-YCFMDBManagerDemo.a */; };
 		EB59A9C3032B643016FBE20C /* libPods-YCFMDBManagerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15431982CB6679A6F25752F /* libPods-YCFMDBManagerDemoTests.a */; };
@@ -55,6 +57,10 @@
 		042B9FBA1F0D223D00ED4C39 /* YCFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFMDBManager.m; sourceTree = "<group>"; };
 		042B9FBD1F0D292C00ED4C39 /* YCFMDBCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFMDBCommand.h; sourceTree = "<group>"; };
 		042B9FBE1F0D292C00ED4C39 /* YCFMDBCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFMDBCommand.m; sourceTree = "<group>"; };
+		042B9FC01F0D36AE00ED4C39 /* AppDelegate+Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Auxiliary.h"; sourceTree = "<group>"; };
+		042B9FC11F0D36AE00ED4C39 /* AppDelegate+Auxiliary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Auxiliary.m"; sourceTree = "<group>"; };
+		042B9FC41F0D377F00ED4C39 /* YCUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCUserInfo.h; sourceTree = "<group>"; };
+		042B9FC51F0D377F00ED4C39 /* YCUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCUserInfo.m; sourceTree = "<group>"; };
 		0E377F98BE59653CE22FA713 /* Pods-YCFMDBManagerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCFMDBManagerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCFMDBManagerDemoUITests/Pods-YCFMDBManagerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		195F2CE868E39F6286B92B96 /* Pods-YCFMDBManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCFMDBManagerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCFMDBManagerDemoTests/Pods-YCFMDBManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F6D69160BDE73CA1EA2F55C /* libPods-YCFMDBManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YCFMDBManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +125,7 @@
 		042B9F831F0D1E2300ED4C39 /* YCFMDBManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				042B9FC31F0D370B00ED4C39 /* model */,
 				042B9FB81F0D220900ED4C39 /* YCFMDBManager */,
 				042B9FB71F0D213600ED4C39 /* Others */,
 				042B9F901F0D1E2300ED4C39 /* Assets.xcassets */,
@@ -159,6 +166,8 @@
 			children = (
 				042B9F871F0D1E2300ED4C39 /* AppDelegate.h */,
 				042B9F881F0D1E2300ED4C39 /* AppDelegate.m */,
+				042B9FC01F0D36AE00ED4C39 /* AppDelegate+Auxiliary.h */,
+				042B9FC11F0D36AE00ED4C39 /* AppDelegate+Auxiliary.m */,
 				042B9F921F0D1E2300ED4C39 /* LaunchScreen.storyboard */,
 			);
 			path = Others;
@@ -181,6 +190,15 @@
 				042B9FBE1F0D292C00ED4C39 /* YCFMDBCommand.m */,
 			);
 			path = help;
+			sourceTree = "<group>";
+		};
+		042B9FC31F0D370B00ED4C39 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				042B9FC41F0D377F00ED4C39 /* YCUserInfo.h */,
+				042B9FC51F0D377F00ED4C39 /* YCUserInfo.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		3B442D4965C14A2F17A2137E /* Frameworks */ = {
@@ -488,10 +506,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B9FC61F0D377F00ED4C39 /* YCUserInfo.m in Sources */,
 				042B9F891F0D1E2300ED4C39 /* AppDelegate.m in Sources */,
 				042B9F861F0D1E2300ED4C39 /* main.m in Sources */,
 				042B9FBF1F0D292C00ED4C39 /* YCFMDBCommand.m in Sources */,
 				042B9FBB1F0D223D00ED4C39 /* YCFMDBManager.m in Sources */,
+				042B9FC21F0D36AE00ED4C39 /* AppDelegate+Auxiliary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
