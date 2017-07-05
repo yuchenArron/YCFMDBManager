@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		042B9F861F0D1E2300ED4C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9F851F0D1E2300ED4C39 /* main.m */; };
 		042B9F891F0D1E2300ED4C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9F881F0D1E2300ED4C39 /* AppDelegate.m */; };
-		042B9F8C1F0D1E2300ED4C39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9F8B1F0D1E2300ED4C39 /* ViewController.m */; };
-		042B9F8F1F0D1E2300ED4C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B9F8D1F0D1E2300ED4C39 /* Main.storyboard */; };
 		042B9F911F0D1E2300ED4C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042B9F901F0D1E2300ED4C39 /* Assets.xcassets */; };
 		042B9F941F0D1E2300ED4C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B9F921F0D1E2300ED4C39 /* LaunchScreen.storyboard */; };
 		042B9F9F1F0D1E2400ED4C39 /* YCFMDBManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9F9E1F0D1E2400ED4C39 /* YCFMDBManagerDemoTests.m */; };
 		042B9FAA1F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FA91F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.m */; };
+		042B9FBB1F0D223D00ED4C39 /* YCFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B9FBA1F0D223D00ED4C39 /* YCFMDBManager.m */; };
 		204A550BE1B47A41A06442AF /* libPods-YCFMDBManagerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64219D850084DFF32C696857 /* libPods-YCFMDBManagerDemoUITests.a */; };
 		3F544B1308860E6B995E89D3 /* libPods-YCFMDBManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6D69160BDE73CA1EA2F55C /* libPods-YCFMDBManagerDemo.a */; };
 		EB59A9C3032B643016FBE20C /* libPods-YCFMDBManagerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15431982CB6679A6F25752F /* libPods-YCFMDBManagerDemoTests.a */; };
@@ -40,11 +39,8 @@
 /* Begin PBXFileReference section */
 		042B9F811F0D1E2300ED4C39 /* YCFMDBManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCFMDBManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042B9F851F0D1E2300ED4C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		042B9F871F0D1E2300ED4C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		042B9F881F0D1E2300ED4C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		042B9F8A1F0D1E2300ED4C39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		042B9F8B1F0D1E2300ED4C39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		042B9F8E1F0D1E2300ED4C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042B9F871F0D1E2300ED4C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		042B9F881F0D1E2300ED4C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		042B9F901F0D1E2300ED4C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042B9F931F0D1E2300ED4C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042B9F951F0D1E2300ED4C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +50,8 @@
 		042B9FA51F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCFMDBManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042B9FA91F0D1E2400ED4C39 /* YCFMDBManagerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCFMDBManagerDemoUITests.m; sourceTree = "<group>"; };
 		042B9FAB1F0D1E2400ED4C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042B9FB91F0D223D00ED4C39 /* YCFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFMDBManager.h; sourceTree = "<group>"; };
+		042B9FBA1F0D223D00ED4C39 /* YCFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFMDBManager.m; sourceTree = "<group>"; };
 		0E377F98BE59653CE22FA713 /* Pods-YCFMDBManagerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCFMDBManagerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCFMDBManagerDemoUITests/Pods-YCFMDBManagerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		195F2CE868E39F6286B92B96 /* Pods-YCFMDBManagerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCFMDBManagerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCFMDBManagerDemoTests/Pods-YCFMDBManagerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F6D69160BDE73CA1EA2F55C /* libPods-YCFMDBManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YCFMDBManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +116,9 @@
 		042B9F831F0D1E2300ED4C39 /* YCFMDBManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				042B9F871F0D1E2300ED4C39 /* AppDelegate.h */,
-				042B9F881F0D1E2300ED4C39 /* AppDelegate.m */,
-				042B9F8A1F0D1E2300ED4C39 /* ViewController.h */,
-				042B9F8B1F0D1E2300ED4C39 /* ViewController.m */,
-				042B9F8D1F0D1E2300ED4C39 /* Main.storyboard */,
+				042B9FB81F0D220900ED4C39 /* YCFMDBManager */,
+				042B9FB71F0D213600ED4C39 /* Others */,
 				042B9F901F0D1E2300ED4C39 /* Assets.xcassets */,
-				042B9F921F0D1E2300ED4C39 /* LaunchScreen.storyboard */,
 				042B9F951F0D1E2300ED4C39 /* Info.plist */,
 				042B9F841F0D1E2300ED4C39 /* Supporting Files */,
 			);
@@ -155,6 +149,25 @@
 				042B9FAB1F0D1E2400ED4C39 /* Info.plist */,
 			);
 			path = YCFMDBManagerDemoUITests;
+			sourceTree = "<group>";
+		};
+		042B9FB71F0D213600ED4C39 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				042B9F871F0D1E2300ED4C39 /* AppDelegate.h */,
+				042B9F881F0D1E2300ED4C39 /* AppDelegate.m */,
+				042B9F921F0D1E2300ED4C39 /* LaunchScreen.storyboard */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		042B9FB81F0D220900ED4C39 /* YCFMDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				042B9FB91F0D223D00ED4C39 /* YCFMDBManager.h */,
+				042B9FBA1F0D223D00ED4C39 /* YCFMDBManager.m */,
+			);
+			path = YCFMDBManager;
 			sourceTree = "<group>";
 		};
 		3B442D4965C14A2F17A2137E /* Frameworks */ = {
@@ -300,7 +313,6 @@
 			files = (
 				042B9F941F0D1E2300ED4C39 /* LaunchScreen.storyboard in Resources */,
 				042B9F911F0D1E2300ED4C39 /* Assets.xcassets in Resources */,
-				042B9F8F1F0D1E2300ED4C39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,9 +475,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042B9F8C1F0D1E2300ED4C39 /* ViewController.m in Sources */,
 				042B9F891F0D1E2300ED4C39 /* AppDelegate.m in Sources */,
 				042B9F861F0D1E2300ED4C39 /* main.m in Sources */,
+				042B9FBB1F0D223D00ED4C39 /* YCFMDBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,20 +513,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		042B9F8D1F0D1E2300ED4C39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				042B9F8E1F0D1E2300ED4C39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		042B9F921F0D1E2300ED4C39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				042B9F931F0D1E2300ED4C39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -617,6 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = US9RD43W86;
 				INFOPLIST_FILE = YCFMDBManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Netposa.YCFMDBManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,6 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = US9RD43W86;
 				INFOPLIST_FILE = YCFMDBManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Netposa.YCFMDBManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,6 +716,7 @@
 				042B9FB01F0D1E2400ED4C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042B9FB11F0D1E2400ED4C39 /* Build configuration list for PBXNativeTarget "YCFMDBManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +725,7 @@
 				042B9FB31F0D1E2400ED4C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042B9FB41F0D1E2400ED4C39 /* Build configuration list for PBXNativeTarget "YCFMDBManagerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +734,7 @@
 				042B9FB61F0D1E2400ED4C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
