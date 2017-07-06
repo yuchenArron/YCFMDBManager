@@ -32,6 +32,34 @@
     return [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (%@)",tableName,cmdStr];
 }
 
++ (NSString *)add:(id)model{
+    return @"";
+}
+
++ (NSString *)delModel:(id)model key:(NSString *)key value:(id)value{
+    return @"";
+}
+
++ (NSString *)modifyModel:(id)model key:(NSString *)key value:(id)value{
+    return nil;
+}
+
++ (NSString *)retrieveModel:(id)model key:(NSString *)key value:(id)value{
+    return nil;
+}
+
++ (NSString *)delAll:(id)model{
+    return nil;
+}
+
++ (NSString *)retrieveAll:(id)model{
+    return nil;
+}
+
+
+#pragma mark - private method
+
+
 //暂时只支持string类型
 //返回对应的FMDB数据类型
 + (NSString *)fmdbDataTypeWith:(id)value{

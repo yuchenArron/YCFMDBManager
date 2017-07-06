@@ -45,6 +45,32 @@ static YCFMDBManager *manager = nil;
     
 }
 
+- (void)addModel:(id)model sql:(NSString *)sqlName{
+
+}
+
+- (void)delModel:(id)model sql:(NSString *)sqlName{
+
+}
+
+- (void)modify:(id)model key:(NSString *)key value:(id)value sql:(NSString *)sqlName{
+
+}
+
+- (id)retrieve:(id)model key:(NSString *)key value:(id)value sql:(NSString *)sqlName{
+    return nil;
+}
+
+- (NSArray *)retrieveAll:(id)model sql:(NSString *)sqlName{
+    return nil;
+}
+
+- (void)delAll:(id)model sql:(NSString *)sqlName{
+
+}
+
+
+
 #pragma mark - private methods
 
 //获取路径
